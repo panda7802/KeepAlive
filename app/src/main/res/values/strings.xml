@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">KeepAlive</string>
+    <string name="all_jobs_cancelled">取消所有服务</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etDurationTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3" />
+
+    <EditText
+        android:id="@+id/etDeadlineTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etDelayTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_red_dark" />
+
+    <TextView
+        android:id="@+id/tvTaskParams"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="task"
+        android:textSize="22sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvOnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="stop" />
+
+    <TextView
+        android:id="@+id/tvOnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:textSize="22sp"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_red_dark" />
+
+    <Button
+        android:id="@+id/btStartJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start" />
+
+    <Button
+        android:id="@+id/btStopJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop" />
+</LinearLayout>

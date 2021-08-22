@@ -4,71 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
-
-    <EditText
-        android:id="@+id/etDurationTime"
+    <fragment
+        android:id="@+id/demo_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="3" />
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        app:navGraph="@navigation/demo_navi"/>
 
-    <EditText
-        android:id="@+id/etDeadlineTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="8"
-        android:textColor="@color/black" />
-
-    <EditText
-        android:id="@+id/etDelayTime"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="5" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="10dp"
-        android:background="@android:color/holo_red_dark" />
-
-    <TextView
-        android:id="@+id/tvTaskParams"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="task"
-        android:textSize="22sp"
-        android:textColor="@color/black" />
-
-    <TextView
-        android:id="@+id/tvOnStop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:text="stop" />
-
-    <TextView
-        android:id="@+id/tvOnStart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="start"
-        android:textSize="22sp"
-        android:textColor="@color/black" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_margin="10dp"
-        android:background="@android:color/holo_red_dark" />
-
-    <Button
-        android:id="@+id/btStartJob"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="start" />
-
-    <Button
-        android:id="@+id/btStopJob"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="stop" />
 </LinearLayout>
